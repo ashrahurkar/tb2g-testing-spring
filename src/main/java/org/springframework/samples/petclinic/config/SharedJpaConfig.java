@@ -30,9 +30,6 @@
  */
 package org.springframework.samples.petclinic.config;
 
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -44,6 +41,9 @@ import org.springframework.orm.jpa.JpaVendorAdapter;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
+
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
 
 @Configuration
 @Profile({"jpa", "spring-data-jpa"})
